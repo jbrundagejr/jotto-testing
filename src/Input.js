@@ -13,7 +13,7 @@ function Input(){
       <form>
         <label htmlFor="inputField">Guess your word!</label>
         <input id="inputField" value={input} onChange={(e) => setInput(e.target.value)}></input>
-        <button></button>
+        <button onSubmit={handleSubmit}>Submit</button>
       </form>
     </div>
   )

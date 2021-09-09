@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 function Congrats(props){
 
   if(props.success){
@@ -13,6 +15,10 @@ function Congrats(props){
       <div data-test='congrats-div'></div>
     )
   }
+}
+
+Congrats.propTypes = {
+  success: PropTypes.bool.isRequired,
 }
 
 export default Congrats
