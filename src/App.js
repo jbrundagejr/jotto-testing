@@ -5,8 +5,11 @@ import Congrats from './Congrats';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
+      <h1>Jotto</h1>
+      <Congrats success={true} />
       <Input />
+      <GuessedWords guessedWords={[{guessedWord: 'train', letterMatchCount: 3}]} />
     </div>
   );
 }

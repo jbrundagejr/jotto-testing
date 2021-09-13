@@ -4,7 +4,7 @@ function Congrats(props){
 
   if(props.success){
     return(
-      <div data-test='congrats-div'>
+      <div data-test='congrats-div' className="alert alert-success">
         <span data-test='congrats-message'>
           Congratulations! You guessed the word!
         </span>
